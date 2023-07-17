@@ -1,11 +1,16 @@
-let person = {
+let person: {
+  name: string;
+  age: number;
+  isMale: boolean;
+  hobbies: string[];
+  role: [string, number];
+} = {
   name: "shabnam",
   age: 24,
   isMale: false,
   hobbies: ["music"],
+  role: ["shabi", 23],
 };
-console.log(person.hobbies);
 
-for (const hobby of person.hobbies) {
-  console.log(hobby);
-}
+person.role.push("shahin");
+console.log(person.role);
