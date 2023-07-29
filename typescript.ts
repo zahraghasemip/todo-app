@@ -1,16 +1,16 @@
-let person: {
-  name: string;
-  age: number;
-  isMale: boolean;
-  hobbies: string[];
-  role: [string, number];
-} = {
+enum Role {
+  admin,
+  teacher,
+  author,
+}
+let person = {
   name: "shabnam",
   age: 24,
   isMale: false,
   hobbies: ["music"],
-  role: ["shabi", 23],
+  role: Role.admin,
 };
 
-person.role.push("shahin");
-console.log(person.role);
+if (person.role === Role.admin) {
+  console.log("let user login");
+}
