@@ -1,8 +1,6 @@
-function combine(
-  input1: number | string,
-  input2: number | string,
-  resulttype: "as-number" | "as-string",
-) {
+type InputType = number | string;
+type ResType = "as-number" | "as-string";
+function combine(input1: InputType, input2: InputType, resulttype: ResType) {
   let result;
   if (typeof input1 == "number" && typeof input2 == "number") {
     result = input1 + input2;
